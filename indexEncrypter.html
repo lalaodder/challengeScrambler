@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío | Programa de Encriptación</title>
+    <!-- <link rel="stylesheet" href="/challengeScrambler/styleEncrypter.css"> -->
+    <link rel="stylesheet" href="styleEncrypter.css">
+    <script type="text/javascript" src="codeEncrypter.js"></script>
+</head>
+
+<body>
+    <div class="principalContainer">
+
+        <div class="encrypterHeader">
+            <img class="isotypeAlura" src="images/isotypeAlura.png" alt="Isotipo Plataforma Alura">
+            <!-- <p class="onlineAlura"> Cursos Online ALURA </p> -->
+            <br>
+            <h1 class="encrypterTitle"> Encriptador de Mensajes </h1>
+        </div>
+        <div class="encrypterBody">
+            <div class="textContainer">
+                <div class="leftContainer">
+                    <textarea name="" class="textareaConverter"  id="inputTextarea" cols="27" rows="8" placeholder="Redacta tu mensaje aquí:"></textarea>
+
+                    <div class="selectionContainer">
+                        <p class="textNote">
+                            Recuerda escribir en letras minúsculas y sin acentos.
+                        </p>
+                        <div class="buttonsContainer">
+                            <div class="buttons">
+                                <button type="button" id="btnEncrypt" onclick="encrypt()">
+                                    Encriptar <br> Ahora
+                                </button>
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button" id="btnDecrypt" onclick="decrypt()">
+                                    Desencriptar <br> Texto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightContainer" align="center">
+                    <img class="munecoAlura" id="imgRight" src="images/munecoAlura.png" alt="Imagen de hombre con lupa.">
+                    <h2 class="headerMuneco" id="titleMunecoH2">¡Ningún mensaje <br> fue encontrado!</h2>
+                    <textarea name="resultOfEncryption" class="textareaEncryption" id="textareaRight" cols="44" rows="2" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                    <button type="button" name="copyButton" class="copyClip" id="clipboardButton" onclick="copyToClipboard()">COPY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <legend align="center" class="copyright">
+        ALURA | Todos los Derechos Reservados.
+    </legend>
+</footer>
+
+</html>
